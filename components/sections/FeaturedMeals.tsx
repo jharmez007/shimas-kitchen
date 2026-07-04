@@ -48,7 +48,7 @@ export default function FeaturedMeals() {
 
         <div className="mt-16 flex justify-center">
           <a
-            href="#menu"
+            href="/menu"
             className="rounded-full border border-[#D4AF37] px-8 py-4 font-semibold transition hover:bg-[#D4AF37]"
           >
             View Full Menu →

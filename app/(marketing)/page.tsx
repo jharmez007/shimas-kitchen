@@ -8,6 +8,7 @@ import FAQ from "@/components/sections/FAQ";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
 
+
 export default function Home() {
   return (
     <>

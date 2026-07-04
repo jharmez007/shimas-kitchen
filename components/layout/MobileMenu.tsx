@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
 import { Menu } from "lucide-react";
+import Link from "next/link";
 
 import {
   Sheet,
@@ -14,8 +14,11 @@ import {
 
 import { NAV_LINKS } from "@/constants/navigation";
 import { Button } from "@/components/ui/button";
+import { useNavigation } from "@/hooks/useNavigation";
 
 export default function MobileMenu() {
+  const { navigateToSection } = useNavigation();
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -38,12 +41,12 @@ export default function MobileMenu() {
         <div className="mt-10 flex flex-col gap-2">
           {NAV_LINKS.map((item) => (
             <SheetClose asChild key={item.href}>
-              <Link
-                href={item.href}
-                className="rounded-xl px-4 py-3 text-lg transition hover:bg-neutral-100"
+              <button
+                onClick={() => navigateToSection(item.href)}
+                className="rounded-xl px-4 py-3 text-left text-lg transition hover:bg-neutral-100"
               >
                 {item.label}
-              </Link>
+              </button>
             </SheetClose>
           ))}
         </div>

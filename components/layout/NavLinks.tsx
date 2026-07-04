@@ -1,10 +1,12 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { NAV_LINKS } from "@/constants/navigation";
+import { useNavigation } from "@/hooks/useNavigation";
 
 export default function NavLinks() {
+  const { navigateToSection } = useNavigation();
+
   return (
     <nav className="hidden items-center gap-10 xl:gap-12 lg:flex">
       {NAV_LINKS.map((link) => (
@@ -12,8 +14,8 @@ export default function NavLinks() {
           key={link.href}
           whileHover={{ y: -2 }}
         >
-          <Link
-            href={link.href}
+          <button
+            onClick={() => navigateToSection(link.href)}
             className="group relative font-semibold text-neutral-800 transition-colors duration-300 hover:text-[#D4AF37]"
           >
             {link.label}
@@ -32,7 +34,7 @@ export default function NavLinks() {
                 group-hover:w-full
               "
             />
-          </Link>
+          </button>
         </motion.div>
       ))}
     </nav>

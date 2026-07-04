@@ -25,7 +25,7 @@ export default function HeroButtons() {
       <motion.a
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
-        href="#menu"
+        href="/menu"
         className="inline-flex items-center justify-center gap-3 rounded-full border border-neutral-300 bg-white px-8 py-4 font-semibold shadow-sm transition hover:border-[#D4AF37]"
       >
         Browse Menu

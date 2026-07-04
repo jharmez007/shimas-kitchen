@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <Section
       id="home"
-      className="relative overflow-hidden pt-28 md:pt-36 lg:pt-24"
+      className="relative overflow-hidden pt-28 md:pt-36 lg:pt-32"
     >
       <HeroBackground />
 

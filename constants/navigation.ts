@@ -1,35 +1,41 @@
 export interface NavItem {
   label: string;
   href: string;
+  isSection?: boolean;
 }
 
 export const NAV_LINKS: NavItem[] = [
   {
     label: "Home",
-    href: "#home",
+    href: "/",
   },
   {
     label: "Menu",
-    href: "#menu",
+    href: "/menu",
   },
   {
     label: "About",
-    href: "#about",
+    href: "/#about",
+    isSection: true,
   },
   {
     label: "Why Us",
-    href: "#why-us",
+    href: "/#why-us",
+    isSection: true,
   },
   {
     label: "Reviews",
-    href: "#testimonials",
+    href: "/#testimonials",
+    isSection: true,
   },
   {
     label: "FAQ",
-    href: "#faq",
+    href: "/#faq",
+    isSection: true,
   },
   {
     label: "Contact",
-    href: "#contact",
+    href: "/#contact",
+    isSection: true,
   },
 ];
