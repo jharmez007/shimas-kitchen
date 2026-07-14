@@ -19,8 +19,10 @@ const categories: ("All" | MenuCategory)[] = [
   "All",
   "Pizza",
   "Cakes",
+  "Dairy",
   "Meat Pies",
   "Small Chops",
+  "Snacks",
   "Soups",
   "Stews",
 ];

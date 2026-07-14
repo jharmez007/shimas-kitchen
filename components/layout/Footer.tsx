@@ -38,7 +38,7 @@ export default function Footer() {
             <h4 className="mb-5 font-semibold">Contact</h4>
 
             <div className="space-y-3 text-neutral-400">
-              <p>+234 708 053 7185</p>
+              <p>+234 706 940 6085</p>
               <p>hello@shimaskitchen.com</p>
               <p>Abuja, Nigeria</p>
             </div>

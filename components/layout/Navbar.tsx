@@ -55,7 +55,7 @@ export function Navbar() {
 
               <div>
                 <h2 className="font-[family:var(--font-playfair)] text-xl font-bold text-neutral-900 md:text-2xl">
-                  Shimas
+                  Shima's
                 </h2>
 
                 <p className="-mt-1 text-[10px] tracking-[5px] text-neutral-500 md:text-xs">

@@ -1,16 +1,51 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { Section } from "@/components/common/Section";
 import { Container } from "@/components/common/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
-
 import FoodCard from "../food/FoodCard";
+import FoodModal from "@/components/menu/FoodModal";
 
 import { featuredMeals } from "@/data/featuredMeals";
+import { Food } from "@/types/food";
+import { MenuCategory, MenuItem } from "@/types/menu";
+
+function mapFeaturedMealToMenuItem(meal: Food): MenuItem {
+  const category: MenuCategory =
+    meal.name.toLowerCase().includes("pizza")
+      ? "Pizza"
+      : meal.name.toLowerCase().includes("soup")
+        ? "Soups"
+        : meal.name.toLowerCase().includes("cake")
+          ? "Cakes"
+          : meal.name.toLowerCase().includes("chops")
+            ? "Small Chops"
+            : "Cakes";
+
+  return {
+    id: `featured-${meal.id}`,
+    category,
+    name: meal.name,
+    description: meal.description,
+    image: meal.image,
+    featured: meal.featured,
+    options: [{ label: "Standard", price: meal.price }],
+  };
+}
 
 export default function FeaturedMeals() {
+  const [selectedMeal, setSelectedMeal] = useState<MenuItem | null>(null);
+
+  const handleOpenOrder = (meal: Food) => {
+    setSelectedMeal(mapFeaturedMealToMenuItem(meal));
+  };
+
+  const handleCloseModal = () => {
+    setSelectedMeal(null);
+  };
   return (
     <Section
       id="featured"
@@ -41,7 +76,10 @@ export default function FeaturedMeals() {
                 delay: index * .12,
               }}
             >
-              <FoodCard meal={meal} />
+              <FoodCard
+                meal={meal}
+                onOrder={() => handleOpenOrder(meal)}
+              />
             </motion.div>
           ))}
         </div>
@@ -54,6 +92,13 @@ export default function FeaturedMeals() {
             View Full Menu →
           </a>
         </div>
+
+        {selectedMeal && (
+          <FoodModal
+            food={selectedMeal}
+            onClose={handleCloseModal}
+          />
+        )}
       </Container>
     </Section>
   );

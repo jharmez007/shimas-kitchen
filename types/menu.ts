@@ -1,8 +1,10 @@
 export type MenuCategory =
   | "Pizza"
   | "Cakes"
+  | "Dairy"
   | "Meat Pies"
   | "Small Chops"
+  | "Snacks"
   | "Soups"
   | "Stews";
 

@@ -260,4 +260,67 @@ export const menu: MenuItem[] = [
       { label: "4 Litres", price: 55000 },
     ],
   },
+
+  // ======================
+  // DAIRY
+  // ======================
+
+  {
+    id: "greek-yogurt",
+    category: "Dairy",
+    name: "Greek Yogurt",
+    description: "Creamy Greek yogurt available in sweetened and unsweetened options.",
+    image: "/foods/greek-yogurt.jpeg",
+    options: [
+      { label: "Unsweetened • 1 Litre", price: 8000 },
+      { label: "Unsweetened • 500ml", price: 4000 },
+      { label: "Unsweetened • 330ml", price: 3000 },
+      { label: "Sweetened • 1 Litre", price: 8500 },
+      { label: "Sweetened • 500ml", price: 4500 },
+      { label: "Sweetened • 330ml", price: 3500 },
+    ],
+  },
+
+  {
+    id: "parfait",
+    category: "Dairy",
+    name: "Parfait",
+    description: "Layered parfait served in convenient sizes.",
+    image: "/foods/parfait.jpg",
+    options: [
+      { label: "300ml", price: 4500 },
+      { label: "600ml", price: 6500 },
+    ],
+  },
+
+  // ======================
+  // SNACKS
+  // ======================
+
+  {
+    id: "chin-chin",
+    category: "Snacks",
+    name: "Chin Chin",
+    description: "Crunchy snack packs in multiple sizes.",
+    image: "/foods/chin-chin.jpg",
+    options: [
+      { label: "1 Litre", price: 8000 },
+      { label: "2 Litres", price: 15000 },
+      { label: "4 Litres", price: 25000 },
+    ],
+  },
+
+  {
+    id: "popcorn",
+    category: "Snacks",
+    name: "Popcorn",
+    description: "Freshly made caramel and milky popcorn.",
+    image: "/foods/popcorn.jpg",
+    options: [
+      { label: "Caramel Popcorn • Big Size", price: 1500 },
+      { label: "Milky Popcorn • Big Size", price: 1500 },
+      { label: "Caramel Popcorn • Small Size", price: 1000 },
+      { label: "Milky Popcorn • Small Size", price: 1000 },
+    ],
+  },
 ];

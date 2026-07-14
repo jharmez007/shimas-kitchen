@@ -8,9 +8,10 @@ import { Food } from "@/types/food";
 
 interface Props {
   meal: Food;
+  onOrder: () => void;
 }
 
-export default function FoodCard({ meal }: Props) {
+export default function FoodCard({ meal, onOrder }: Props) {
   return (
     <motion.div
       whileHover={{
@@ -47,16 +48,17 @@ export default function FoodCard({ meal }: Props) {
             ₦{meal.price.toLocaleString()}
           </h4>
 
-          <motion.a
+          <motion.button
+            type="button"
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: .96 }}
-            href="https://wa.me/2347080537185"
+            whileTap={{ scale: 0.96 }}
+            onClick={onOrder}
             className="flex items-center gap-2 rounded-full bg-black px-5 py-3 text-white transition hover:bg-[#D4AF37] hover:text-black"
           >
             Order
 
             <ArrowRight size={18} />
-          </motion.a>
+          </motion.button>
         </div>
       </div>
     </motion.div>
