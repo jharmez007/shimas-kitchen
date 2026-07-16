@@ -137,12 +137,36 @@ export const menu: MenuItem[] = [
     image: "/foods/small-chops.jpg",
     featured: true,
     options: [
-      { label: "Package One", price: 3000 },
-      { label: "Package Two", price: 5000 },
-      { label: "Package Three", price: 8500 },
-      { label: "Package Four", price: 14000 },
-      { label: "Package Five", price: 20000 },
-      { label: "Package Six", price: 30000 },
+      {
+        label: "Package One",
+        price: 3000,
+        items: ["2 Samosas", "2 Spring rolls", "4 Puff puff", "1 Beef"],
+      },
+      {
+        label: "Package Two",
+        price: 5000,
+        items: ["3 Samosas", "3 Spring rolls", "6 Puff puff", "2 Beef"],
+      },
+      {
+        label: "Package Three",
+        price: 8500,
+        items: ["5 Samosas", "5 Spring rolls", "10 Puff puff", "1 Chicken"],
+      },
+      {
+        label: "Package Four",
+        price: 14000,
+        items: ["8 Samosas", "8 Spring rolls", "25 Puff puff", "1 Chicken or turkey"],
+      },
+      {
+        label: "Package Five",
+        price: 20000,
+        items: ["10 Samosas", "10 Spring rolls", "30 Puff puff", "2 Chicken", "1 Turkey"],
+      },
+      {
+        label: "Package Six",
+        price: 30000,
+        items: ["12 Samosas", "12 Spring rolls", "30 Puff puff", "3 Chicken", "3 Turkey"],
+      },
     ],
   },
 
@@ -202,6 +226,38 @@ export const menu: MenuItem[] = [
       { label: "1L Goat", price: 20000 },
       { label: "1L Beef", price: 15000 },
       { label: "1L Chicken", price: 20000 },
+    ],
+  },
+
+  {
+    id: "ogbono",
+    category: "Soups",
+    name: "Ogbono Soup",
+    description: "Fresh Home Made Ogbono soup.",
+    image: "/foods/ogbono.jpg",
+    options: [
+      { label: "2L Goat", price: 22000 },
+      { label: "2L Beef", price: 18000 },
+      { label: "2L Chicken", price: 22000 },
+      { label: "1L Goat", price: 18000 },
+      { label: "1L Beef", price: 15000 },
+      { label: "1L Chicken", price: 18000 },
+    ],
+  },
+
+  {
+    id: "vegetable",
+    category: "Soups",
+    name: "Vegetable Soup",
+    description: "Rich Vegetable soup.",
+    image: "/foods/vegetable.jpg",
+    options: [
+      { label: "2L Goat", price: 22000 },
+      { label: "2L Beef", price: 18000 },
+      { label: "2L Chicken", price: 22000 },
+      { label: "1L Goat", price: 18000 },
+      { label: "1L Beef", price: 15000 },
+      { label: "1L Chicken", price: 18000 },
     ],
   },
 

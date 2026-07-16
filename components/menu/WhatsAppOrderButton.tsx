@@ -38,7 +38,11 @@ ${food.name}
 📦 *Option*
 ${option.label}
 
-🔢 *Quantity*
+${
+  option.items?.length
+    ? `*Package contents*\n${option.items.map((item) => `• ${item}`).join("\n")}\n`
+    : ""
+}🔢 *Quantity*
 ${quantity}
 
 💰 *Unit Price*

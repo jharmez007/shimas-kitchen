@@ -111,18 +111,27 @@ export default function FoodModal({
                         onClick={() =>
                           setSelectedOption(option)
                         }
-                        className={`flex items-center justify-between rounded-2xl border p-4 transition ${
+                        className={`rounded-2xl border p-4 text-left transition ${
                           active
                             ? "border-[#D4AF37] bg-[#D4AF37]/10"
                             : "border-neutral-200 hover:border-[#D4AF37]"
                         }`}
                       >
-                        <span>{option.label}</span>
+                        <span className="flex items-center justify-between gap-4">
+                          <span className="font-semibold">{option.label}</span>
 
-                        <span className="font-bold">
-                          ₦
-                          {option.price.toLocaleString()}
+                          <span className="font-bold">
+                            ₦{option.price.toLocaleString()}
+                          </span>
                         </span>
+
+                        {option.items && (
+                          <span className="mt-3 grid gap-1 border-t border-neutral-200/80 pt-3 text-sm text-neutral-600 sm:grid-cols-2">
+                            {option.items.map((item) => (
+                              <span key={item}>• {item}</span>
+                            ))}
+                          </span>
+                        )}
                       </button>
                     );
                   })}

@@ -11,6 +11,7 @@ export type MenuCategory =
 export interface MenuOption {
   label: string;
   price: number;
+  items?: string[];
 }
 
 export interface MenuItem {
