@@ -1,5 +1,6 @@
 import Hero from "@/components/hero/Hero";
 import FeaturedMeals from "@/components/sections/FeaturedMeals";
+import BulkOrderOffer from "@/components/sections/BulkOrderOffer";
 import About from "@/components/sections/About";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -14,6 +15,7 @@ export default function Home() {
     <>
       <Hero />
       <FeaturedMeals />
+      <BulkOrderOffer />
       <About />
       <WhyChooseUs />
       <HowItWorks />

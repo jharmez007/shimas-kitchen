@@ -53,7 +53,7 @@ export default function MenuSection() {
   return (
     <Section
       id="menu"
-      className="bg-[#FFFDF9]"
+      className="bg-[#FFFDF9] pt-28"
     >
       <Container>
         <SectionHeader
