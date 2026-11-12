@@ -94,7 +94,7 @@ export default function BulkOrderOffer() {
               </ul>
 
               <a
-                href={`https://wa.me/2347080537185?text=${bulkOrderMessage}`}
+                href={`https://wa.me/2347069406085?text=${bulkOrderMessage}`}
                 target="_blank"
                 rel="noreferrer"
                 className="mt-7 flex w-full items-center justify-center gap-2 rounded-full bg-[#D4AF37] px-6 py-4 font-bold text-black transition hover:bg-[#C59B1A] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#D4AF37]"

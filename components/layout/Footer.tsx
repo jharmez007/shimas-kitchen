@@ -56,7 +56,7 @@ export default function Footer() {
                 <FaFacebookF />
               </a>
 
-              <a href="https://wa.me/2347080537185" >
+              <a href="https://wa.me/2347069406085" >
                 <FaWhatsapp />
               </a>
             </div>

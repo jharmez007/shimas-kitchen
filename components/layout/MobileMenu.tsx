@@ -55,7 +55,7 @@ export default function MobileMenu() {
           <SheetClose asChild>
             <Button asChild className="w-full rounded-full">
               <Link
-                href="https://wa.me/2347080537185"
+                href="https://wa.me/2347069406085"
                 target="_blank"
                 rel="noopener noreferrer"
               >

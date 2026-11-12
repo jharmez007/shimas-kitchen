@@ -94,7 +94,7 @@ export default function Contact() {
             </p>
 
             <a
-              href="https://wa.me/2347080537185"
+              href="https://wa.me/2347069406085"
               className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#D4AF37] px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               <FaWhatsapp />

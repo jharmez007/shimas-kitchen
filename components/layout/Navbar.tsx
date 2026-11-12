@@ -76,7 +76,7 @@ export function Navbar() {
               whileTap={{
                 scale: 0.96,
               }}
-              href="https://wa.me/2347080537185"
+              href="https://wa.me/2347069406085"
               className="
                 hidden
                 items-center

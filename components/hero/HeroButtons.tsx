@@ -14,7 +14,7 @@ export default function HeroButtons() {
       <motion.a
         whileHover={{ scale: 1.04 }}
         whileTap={{ scale: 0.97 }}
-        href="https://wa.me/2347080537185"
+        href="https://wa.me/2347069406085"
         className="inline-flex items-center justify-center gap-3 rounded-full bg-[#D4AF37] px-8 py-4 font-semibold text-black shadow-xl transition hover:bg-[#C59B1A]"
       >
         Order on WhatsApp

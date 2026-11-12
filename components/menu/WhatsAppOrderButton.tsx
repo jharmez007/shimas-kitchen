@@ -14,7 +14,7 @@ interface WhatsAppOrderButtonProps {
   total: number;
 }
 
-const WHATSAPP_NUMBER = "2347080537185"; // Replace with Shimas Kitchen number
+const WHATSAPP_NUMBER = "2347069406085"; // Replace with Shimas Kitchen number
 
 export default function WhatsAppOrderButton({
   food,
